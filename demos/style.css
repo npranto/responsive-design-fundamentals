@@ -71,16 +71,131 @@
 	height: 200px;
 }
 @media screen and (max-width: 500px)  {
-	.one{order: 5}
-	.two{order: 4}
-	.three{order: 3}
-	.four{order: 2}
-	.five{order: 1}
+	.container_5 .one{order: 5}
+	.container_5 .two{order: 4}
+	.container_5 .three{order: 3}
+	.container_5 .four{order: 2}
+	.container_5 .five{order: 1}
 }
 
 
+/*column drop pattern*/
+.container_6 {
+	display: flex;
+	flex-wrap: wrap;
+}
+.container_6 .column-drop{
+	background-color: white;
+	width: 100%;
+	height: 150px;
+}
+.container_6 .one{
+	background-color: black;
+}
+.container_6 .two{
+	background-color: green;
+}
+.container_6 .three{
+	background-color: yellow;
+}
+@media screen and (min-width: 500px) {
+	.container_6 .one{
+		width: 20%;
+	}
+	.container_6 .two{
+		width: 80%;
+	}
+	.container_6 .three{
+		width: 100%;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.container_6 .one, .container_6 .two, .container_6 .three{
+		width: calc(100%/3);
+	}
+}
 
 
+/*mostly fluid pattern*/
+.container_7 {
+	display: flex;
+	flex-wrap: wrap;
+}
+.container_7 .column-drop{
+	background-color: white;
+	width: 100%;
+	height: 150px;
+}
+.container_7 .one{
+	background-color: black;
+}
+.container_7 .two{
+	background-color: green;
+}
+.container_7 .three{
+	background-color: yellow;
+}
+@media screen and (min-width: 500px) {
+	.container_7 .one{
+		width: 20%;
+	}
+	.container_7 .two{
+		width: 80%;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.container_7{
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+/*layout shifter pattern (the most responsive pattern)*/
+.container_8 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container_8 .block, .container_8 .two-three{
+	width: 100%;
+}
+.container_8 .block{
+	height: 150px;
+}
+.container_8 .one{
+	background-color: black;
+}
+.container_8 .two{
+	background-color: gray;
+}
+.container_8 .three{
+	background-color: purple;
+}
+.container_8 .four{
+	background-color: orange;
+}
+@media screen and (min-width: 500px) {
+	.container_8 .one{
+		width: 50%;
+		height: 300px;
+	}
+	.container_8 .two-three{
+		width: 50%;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.container_8 .one{
+		order: 1;
+		width: 25%;
+	}
+	.container_8 .four{
+		height: 300px;
+		width: 25%;
+		order: -1;
+	}
+}
 
 
 
