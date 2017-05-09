@@ -5,12 +5,15 @@
 	max-width: 100%;
 }
 
+
 /*makes sure button, a, or nav elements are at least 48px wide in order to provide a fair clickable element for out fingers*/
 .container_2 .btn {
 	min-width: 48px;
 	min-height: 48px;
 }
 
+
+/*using media queries*/
 @media screen and (min-width: 500px) {
     body {
         background-color: lightgreen;
