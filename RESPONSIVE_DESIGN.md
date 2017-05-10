@@ -9,5 +9,6 @@ CSS pixels = device hardware pixels / device independent pixels
 i.e., 
 	a tablet with width of 640px and dip of 2 would have viewport width of (640/2) = 320px;
 
-
+Images
+Always try to use vector images over raster images as it lasts better with scale factors, thus, no distortion, low resolution, or cluttered image
 

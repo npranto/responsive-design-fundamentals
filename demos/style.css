@@ -198,4 +198,30 @@
 }
 
 
+/*using calc()*/
+.container_9 img{
+	float: left;
+	width: calc((100% - 1em)/3);
+	height: auto;
+	margin-right: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+.container_9 img:last-of-type{
+	margin-right: 0px;
+}
+
+
+/*using 'vmin' and 'vmax'*/
+.container_10{
+	height: 50vw;
+	width: 50vw;
+	background-color: yellow;
+}
+.container_10 img{
+	width: 50vmax;
+	height: 50vmax;
+}
+
+
 
